@@ -1,0 +1,35 @@
+python .\example.py 2018/01/01 -1
+2017/12/31
+
+python .\example.py 2018/01/09 -1
+2018/01/08
+
+.\example.py 2018/12/31 -23
+2018/12/08
+
+python .\example.py 2018/12/31 13
+2019/01/13
+
+python .\example.py --step 2018/12/40 10
+Error: Wrong day entered
+
+python .\example.py --step 2018/13/30 10
+Error: Wrong month entered
+
+python .\example.py --step 2018/12/30 -10
+2018/12/292018/12/282018/12/272018/12/262018/12/252018/12/242018/12/232018/12/222018/12/212018/12/20
+
+python .\example.py --step 2018/10/30 5
+2018/10/312018/11/012018/11/022018/11/032018/11/04
+
+python .\example.py 2018 -10
+Error: Wrong date entered
+
+python .\example.py --step 2018/12 -10
+Error: Wrong date entered
+
+python .\example.py 2018/10/10 2019/02/03
+116
+
+python .\example.py 2018/10/10 2015/02/03
+1345
